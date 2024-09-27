@@ -20,22 +20,24 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:wght@900&display=swap" rel="stylesheet">
 
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+
     <script src="script.js" defer></script>
     <title>Krzysztof Dudek</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="relative">
+    <div class="relative overflow-x-hidden">
         <div class="text-sm py-2">
             <div class="flex justify-around w-100 m-auto max-w-xl">
                 <a href="#about" class="hover:cursor-pointer hover:underline initial-fade-in">About me</a>
                 <a href="#expierience" class="hover:cursor-pointer hover:underline initial-fade-in">Expierience</a>
-                <p class="hover:cursor-pointer hover:underline initial-fade-in">Projects</p>
+                <a href="#projects" class="hover:cursor-pointer hover:underline initial-fade-in">Projects</a>
             </div>
         </div>
-        <div class="flex justify-center items-center h-screen overflow-hidden relative">
-            <div id="blue-box" class="bg-sky-500 text-2xl rounded px-16 py-12 z-20">
-                <div class="text-8xl flex text-white items-center p-0 m-0 z-20" style="font-family: Bebas Neue;">
+        <div class="flex justify-center items-center h-48 overflow-hidden relative">
+            <div id="blue-box" class="bg-sky-500 text-2xl rounded px-8 py-6 z-20">
+                <div class="text-4xl flex text-white items-center p-0 m-0 z-20" style="font-family: Bebas Neue;">
                     <div class="flex mt-2">
                         <p class="name">K</p>
                         <p class="name">r</p>
@@ -58,31 +60,76 @@
             <div></div>
         </div>
 
-
-        
-        <div class="bg-orange-500 px-24 py-16">
-            <div class="max-w-4xl m-auto fredoka-700 relative">
-                <h1 id="about" class="text-6xl fredoka-700 show-text">ABOUT ME...</h1>
-                <div class="py-8">
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <p class="show-text">I am curreny pursuing a bachelors degree in computer science at AGH</p>
-                            <p class="show-text">I have a strong passion for technology, coding and solving problems</p>
-                            <p class="show-text">I look for new ways to develop my skills</p>
-
-                        </div>
-                        <img id="agh-logo" src="agh-logo.png" class="bg-white h-24 w-24 p-2 rounded-full">
+        <div class="px-4 py-16 overflow-x-hidden fredoka-400">
+            <div class="max-w-4xl container m-auto relative">
+                <div class="flex flex-col sm:flex-row justify-between items-center">
+                    <h1 id="about" class="text-6xl about-text-show">About me...</h1>
+                    <div>
+                        <ul class="mt-4">
+                            <li class="about-text-show">I am curreny pursuing a bachelors degree in computer science at AGH. I am currently at my last semester</li>
+                            <li class="about-text-show">I have a strong passion for technology, coding and solving problems</li>
+                            <li class="about-text-show">I have worked on with many technologies on many different projects</li>
+                            <li class="about-text-show">I look for new ways to develop my skills</li>
+                        </ul>
                     </div>
-
+                    <img id="agh-logo" src="./images/agh-logo.png" class="bg-white h-24 w-24 p-2 rounded-full mt-4 sm:mt-0">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-semibold my-4 about-skills-show">Skills:</h1>
+                    <div class="flex flex-row flex-wrap gap-8 sm:gap-16 justify-center sm:items-start">
+                        <div class="flex flex-col items-center about-skills-show">
+                            <p class="font-semibold ">Frontend</p>
+                            <p>React</p>
+                            <p>JS/TS</p>
+                            <p>Tailwind</p>
+                            <p>Angular</p>
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="flex flex-col items-center about-skills-show">
+                            <p class="font-semibold">Backend</p>
+                            <p>Python</p>
+                            <p>Django</p>
+                            <p>MySQL</p>
+                            <p>Spring Boot</p>
+                            <p>OAuth</p>
+                        </div>
+                        <div class="flex flex-col items-center about-skills-show">
+                            <p class="font-semibold">DevOps</p>
+                            <p>Docker</p>
+                            <p>Gitlab CI</p>
+                            <p>Azure</p>
+                            <p>Nginx</p>
+                            <p>git</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="bg-slate-800 px-24 py-16 h-screen">
-            <div class="max-w-4xl m-auto text-white">
-                <h1 id="expierience" class="noto-sans-800 text-6xl">My Expierience</h1>
-                <div class="noto-sans-600">
-                    <p>asdasdasd asdasda </p>
+        <div class="bg-slate-800 px-4 py-16">
+            <div class="container max-w-4xl text-white m-auto">
+                <h1 id="expierience" class="noto-sans-800 text-6xl underline">My Expierience</h1>
+                <div class="noto-sans-600 mt-8 flex justify-between items-center">
+                    <div>
+                        <img src="./images/nokia-logo.png" class="h-8 my-2">
+                        <p>Software Developer</p>
+                    </div>
+                    <p>June 2022 - Present</p>
                 </div>
+                
+                <ul class="list-disc ml-6 mt-2 gap-3">
+                    <li class="mt-2">I worked on the development process of a new application responsible for storing and managing real estate and lab data.
+                        I was responsible for turning business requirements into app features. I developed the database layer - schemas, triggers, backups.
+                        Developed and API for retrieving and managing stored data. I worked on tests - unit and E2E with selenium. Developed CI/CD pipelines
+                        with Gitlab CI. Integrated Azure SSO for user authorization. The app was fully dockerized.
+                    </li>
+                    <li class="mt-2">I was responsible for maintaining an older application, that provied laboratory data for LabOps teams 
+                        My duties were mostly bug-fixes, and adding new features, ui impovements, databse schema changes.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-gray-300 h-screen py-8">
+            <div class="max-w-4xl m-auto container">
+                <h1 id="projects" class="text-4xl font-semibold underline">Projects</h1>
             </div>
         </div>
     </div>
