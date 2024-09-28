@@ -27,89 +27,93 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="relative overflow-x-hidden">
-        <div class="text-sm py-2">
-            <div class="flex justify-around w-100 m-auto max-w-xl">
-                <a href="#about" class="hover:cursor-pointer hover:underline initial-fade-in">About me</a>
-                <a href="#expierience" class="hover:cursor-pointer hover:underline initial-fade-in">Expierience</a>
-                <a href="#projects" class="hover:cursor-pointer hover:underline initial-fade-in">Projects</a>
+    <div id="top" class="relative overflow-hidden">
+        <div id="change-bg">
+            <div class="text-sm py-2">
+                <nav  class="flex justify-around w-100 m-auto max-w-xl">
+                    <a href="#about" class="hover:cursor-pointer hover:underline initial-fade-in">About me</a>
+                    <a href="#expierience" class="hover:cursor-pointer hover:underline initial-fade-in">Expierience</a>
+                    <a href="#projects" class="hover:cursor-pointer hover:underline initial-fade-in">Projects</a>
+                </nav>
             </div>
-        </div>
-        <div class="flex justify-center items-center h-48 overflow-hidden relative">
-            <div id="blue-box" class="bg-sky-500 text-2xl rounded px-8 py-6 z-20">
-                <div class="text-4xl flex text-white items-center p-0 m-0 z-20" style="font-family: Bebas Neue;">
-                    <div class="flex mt-2">
-                        <p class="name">K</p>
-                        <p class="name">r</p>
-                        <p class="name">z</p>
-                        <p class="name">y</p>
-                        <p class="name">s</p>
-                        <p class="name">z</p>
-                        <p class="name">t</p>
-                        <p class="name">o</p>
-                        <p class="name">f</p>
-                        <div class="mx-1"></div>
-                        <p class="name">D</p>
-                        <p class="name">u</p>
-                        <p class="name">d</p>
-                        <p class="name">e</p>
-                        <p class="name">k</p>
+            <div class="flex justify-center items-center h-48 overflow-hidden relative">
+                <div id="blue-box" class="bg-sky-500 text-2xl rounded px-8 py-6 z-20">
+                    <div class="text-4xl flex text-white items-center p-0 m-0 z-20" style="font-family: Bebas Neue;">
+                        <div class="flex mt-2">
+                            <p class="name">K</p>
+                            <p class="name">r</p>
+                            <p class="name">z</p>
+                            <p class="name">y</p>
+                            <p class="name">s</p>
+                            <p class="name">z</p>
+                            <p class="name">t</p>
+                            <p class="name">o</p>
+                            <p class="name">f</p>
+                            <div class="mx-1"></div>
+                            <p class="name">D</p>
+                            <p class="name">u</p>
+                            <p class="name">d</p>
+                            <p class="name">e</p>
+                            <p class="name">k</p>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+
+            <div class="px-4 py-16 overflow-x-hidden fredoka-400">
+                <div class="max-w-4xl container m-auto relative">
+                    <div class="justify-between items-center">
+                        <h1 id="about" class="text-4xl about-text-show">About me...</h1>
+                        <div class="flex sm:flex-row flex-col justify-between items-center">
+                            <div>
+                                <ul class="mt-4 list-disc ml-6">
+                                    <li class="about-text-show">I am currently pursuing a bachelors degree in computer science at AGH university in Krakow Poland. I am currently on my last semester</li>
+                                    <li class="about-text-show">Throughout college I have learned a lot, and mostly that I do not know anything about most things and propably never will</li>
+                                    <li class="about-text-show">I like solving problems, using my skills, and learning how to impove what I already know</li>
+                                </ul>
+                            </div>
+                            <img id="agh-logo" src="./images/agh-logo.png" class="h-24 w-24 p-2 mt-4 sm:mt-0">
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl  my-4 about-skills-show">Skills:</h1>
+                        <div class="flex flex-row flex-wrap gap-8 sm:gap-16 justify-center sm:items-start">
+                            <div class="flex flex-col items-center about-skills-show">
+                                <p class="font-semibold ">Frontend</p>
+                                <p>React</p>
+                                <p>JS/TS</p>
+                                <p>Tailwind</p>
+                                <p>Angular</p>
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="flex flex-col items-center about-skills-show">
+                                <p class="font-semibold">Backend</p>
+                                <p>Python</p>
+                                <p>Django</p>
+                                <p>MySQL</p>
+                                <p>Spring Boot</p>
+                                <p>OAuth</p>
+                            </div>
+                            <div class="flex flex-col items-center about-skills-show">
+                                <p class="font-semibold">DevOps</p>
+                                <p>Docker</p>
+                                <p>Gitlab CI</p>
+                                <p>Azure</p>
+                                <p>Nginx</p>
+                                <p>git</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div></div>
+            <div id="color-trigger"></div>
         </div>
 
-        <div class="px-4 py-16 overflow-x-hidden fredoka-400">
-            <div class="max-w-4xl container m-auto relative">
-                <div class="justify-between items-center">
-                    <h1 id="about" class="text-6xl about-text-show">About me...</h1>
-                    <div class="flex sm:flex-row flex-col justify-between items-center">
-                        <div>
-                            <ul class="mt-4 list-disc ml-6">
-                                <li class="about-text-show">I am currently pursuing a bachelors degree in computer science at AGH university in Krakow Poland. I am currently on my last semester</li>
-                                <li class="about-text-show">Throughout college I have learned a lot, and mostly that I do not know anything about most things and propably never will</li>
-                                <li class="about-text-show">I like solving problems, using my skills, and learning how to impove what I already know</li>
-                            </ul>
-                        </div>
-                        <img id="agh-logo" src="./images/agh-logo.png" class="bg-white h-24 w-24 p-2 rounded-full mt-4 sm:mt-0">
-                    </div>
-                </div>
-                <div>
-                    <h1 class="text-2xl font-semibold my-4 about-skills-show">Skills:</h1>
-                    <div class="flex flex-row flex-wrap gap-8 sm:gap-16 justify-center sm:items-start">
-                        <div class="flex flex-col items-center about-skills-show">
-                            <p class="font-semibold ">Frontend</p>
-                            <p>React</p>
-                            <p>JS/TS</p>
-                            <p>Tailwind</p>
-                            <p>Angular</p>
-                            <p>Bootstrap</p>
-                        </div>
-                        <div class="flex flex-col items-center about-skills-show">
-                            <p class="font-semibold">Backend</p>
-                            <p>Python</p>
-                            <p>Django</p>
-                            <p>MySQL</p>
-                            <p>Spring Boot</p>
-                            <p>OAuth</p>
-                        </div>
-                        <div class="flex flex-col items-center about-skills-show">
-                            <p class="font-semibold">DevOps</p>
-                            <p>Docker</p>
-                            <p>Gitlab CI</p>
-                            <p>Azure</p>
-                            <p>Nginx</p>
-                            <p>git</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-slate-800 px-4 py-16">
-            <div class="container max-w-4xl text-white m-auto">
-                <h1 id="expierience" class="noto-sans-800 text-6xl underline">My Expierience</h1>
-                <div class="noto-sans-600 mt-8 flex justify-between items-center">
+        <div class="px-4 py-16">
+            <div class="container max-w-4xl m-auto">
+                <h1 id="expierience" class="noto-sans-800 text-4xl underline expierience-show">My Expierience</h1>
+                <div class="noto-sans-600 mt-8 flex justify-between items-center expierience-show">
                     <div>
                         <img src="./images/nokia-logo.png" class="h-8 my-2">
                         <p>Software Developer</p>
@@ -118,20 +122,57 @@
                 </div>
                 
                 <ul class="list-disc ml-6 mt-2 gap-3">
-                    <li class="mt-2">I worked on the development process of a new application responsible for storing and managing real estate and lab data.
+                    <li class="mt-2 expierience-show">I worked on the development process of a new application responsible for storing and managing real estate and lab data.
                         I was responsible for turning business requirements into app features. I developed the database layer - schemas, triggers, backups.
                         Developed and API for retrieving and managing stored data. I worked on tests - unit and E2E with selenium. Developed CI/CD pipelines
                         with Gitlab CI. Integrated Azure SSO for user authorization. The app was fully dockerized.
                     </li>
-                    <li class="mt-2">I was responsible for maintaining an older application, that provied laboratory data for LabOps teams 
+                    <li class="mt-2 expierience-show">I was responsible for maintaining an older application, that provied laboratory data for LabOps teams 
                         My duties were mostly bug-fixes, and adding new features, ui impovements, databse schema changes.</li>
                 </ul>
             </div>
         </div>
-        <div class="bg-gray-300 h-screen py-8">
+        <div class="px-4 py-16">
             <div class="max-w-4xl m-auto container">
-                <h1 id="projects" class="text-4xl font-semibold underline">Projects</h1>
+                <h1 id="projects" class="text-4xl font-semibold underline">Projects:</h1>
+                <div class="mt-2">
+                    <ul class="list-disc">
+                        <li class="ml-4">                    
+                            <a href="https://github.com/kdudek22/sensoryczne" target="_blank" class="noto-sans-600 hover:underline">AI powered survilance cameras for object detection</a>
+                            <p class="mt-2">Worked on a team of 3 people. We built an AI powered camera detection system using YOLO v8. We trained our custom model on wildlife data, with more than 15 classes.
+                                    The model was run on a raspbery pi, connected to a camera. We set up a server, frontend panel and a broker to handle events. The system recorded detections, and sent them to our server,
+                                    and displayed it to a user. Later we hooked up a speker to the mqtt broker, and run dettering sound on detections. Tech stack: django, angular, python, rabbitmqtt. Everything was
+                                    dockerized and deployed on a google cloud vm instance. The project was a showcase of YOLO abilities.
+                            </p>
+                        </li>
+                        <li class="ml-4 mt-2">                    
+                            <a class="noto-sans-600">IOT air condition measurments</a>
+                            <p>Me and two friend joined together for a college project, the goal was to build a IOT solution. We got a CO2 sensor and a raspberry pi. We build an API in Java with Spring Boot, deployed it to an Azure VM, hosted a broker. We also build a mobile app for it in Kotlin with
+                                basic features like login, register, viewing current and historical data. The project was fine, as we have thankfully passed the subject.
+                            </p>
+                        </li>
+                        <li class="ml-4 mt-2">                    
+                            <a href="https://github.com/kdudek22/hash_breaking" target="" class="noto-sans-600">P2P hash breaking</a>
+                            <p>
+                                For a college project we had to built a peer-to-peer hash breaking application, and include as many design patterns in it as we could. We did it in java using libp2p - a p2p programmin framework. You would enter a hash, and the hash algorithm used, and the network would distribute tasks
+                                for to all nodes. Once one node found the correct anwser it would distribute it across the system, and other nodes would verify it. It was my first expierience coding p2p programs, and it was fun but challenging 
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
+        </div>
+        <div class="bg-slate-800 text-white py-8 text-xs noto-sans-600">
+            <div class="m-auto max-w-2xl">
+
+                <div class="flex justify-around mt-4">
+                    <a href="#top" class="hover:underline">Go to the top</a>
+                    <p>@2024 Krzysztof Dudek</p>
+                </div>
+            </div>
+
+
         </div>
     </div>
     
