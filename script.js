@@ -1,6 +1,3 @@
-
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -37,6 +34,8 @@ gsap.to("#agh-logo", { scale: 1, duration: 0.5, ease: "power2.out" });
 });
 
 //expierience scroll trigger
-
 gsap.from(".expierience-show", {opacity: 0, stagger: 0.5, duration: 0.5, scrollTrigger:{trigger: ".expierience-show", start: "bottom 85%"}})
+
+//projects scroll trigger
+gsap.from(".projects-scroll-show", {opacity: 0, stagger: 0.5, duration: 0.5, scrollTrigger:{trigger: ".projects-scroll-show", start: "bottom 85%"}})
 

@@ -3,7 +3,7 @@ body root html{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    overflow: hidden;
 
 }
 *{
@@ -51,30 +51,3 @@ body root html{
     border-image: radial-gradient(red 69%, #0000 70%) 84.5%/50%;
     clip-path: polygon(-41% 0, 50% 91%, 141% 0);
   }
-
-#projects{
-  transition: background-position 1s ease-out;
-}
-
-#projects:hover {
-  background: linear-gradient(270deg, #ff0066, #00ccff, #ffcc00, #ff0066);
-  background-size: 800% 800%;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-position: 0% 50%;
-  
-  animation: gradient 5s ease-out infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-}
