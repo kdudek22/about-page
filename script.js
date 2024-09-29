@@ -1,6 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-
 //inital
 gsap.timeline().fromTo(".initial-fade-in", {opacity: 0}, {opacity: 1, duration: 0.25, stagger: 0.35})
 
