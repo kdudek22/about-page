@@ -119,6 +119,28 @@
                 <li class="mt-2 expierience-show">I was responsible for maintaining an older application, that provied laboratory data for LabOps teams 
                     My duties were mostly bug-fixes, and adding new features, ui impovements, databse schema changes.</li>
             </ul>
+
+            <div class="noto-sans-600 mt-8 flex justify-between items-center expierience-show">
+                <div>
+                    <img src="./images/solarboat.png" class="h-12 my-2">
+                    <p>Developer</p>
+                </div>
+                <p>2024 - Present</p>
+            </div>
+            
+            <ul class="list-disc ml-6 mt-2 gap-3">
+                <li class="mt-2 expierience-show">AGH Solarboat is a student organization that participates in
+                    competitions for student electric boats. I joined the autonomous boat
+                    division.
+                </li>    
+                <li class="mt-2 expierience-show">I was responsible for the GUI interface for the boat - it was used to
+                    monitor the state of the boat,  to better understand its states and optimize our approaches and algorithms
+                    used. I developed a web application to show data from the boat in real time. It was optimized for high volumes of data,
+                    integrated with video streaming from the on board cameras. Added lots of visualization methods of the boats state, that
+                    help to better prepare for upcoming competitions. Tech stack: Ros, React, recharts, tailwind, 
+                </li>    
+            </ul>
+
         </div>
     </section>
     <section class="px-4 py-16">
@@ -126,6 +148,16 @@
             <h1 id="projects" class="text-4xl underline projects-scroll-show">Projects:</h1>
             <div class="mt-2">
                 <ul class="list-disc">
+                    <li class="ml-4 mb-2 projects-scroll-show">
+                        <a href="https://github.com/kdudek22/tsp_app" target="_blank" class="noto-sans-600 hover:underline">Traveling salesman problem solver</a>
+                        <img src="images/tsp-app.png" class="h-32 m-1"/>
+                        <p>This was a project for my engineering thesis. The project is a web application designed to provide a environemnt for designing and testing tsp sovlers, efficiently using
+                            a gui and a template for designing solvers. It enabled the user to input the problem using the map - simply click where you need to be routed.The application is written
+                            in React, and mostly relies on the react-leaflet package for visualization. Zustand is used for state managment - its a simpler alternative to redux. Backend is written
+                            in spring boot with kotlin - it mostly sends request to the Open Route Service API. There is also a solver  backend - it has endpoint to 
+                            pass the problem to a desired solver and get the solution.
+                        </p>
+                    </li>
                     <li class="ml-4 projects-scroll-show">                    
                         <a href="https://github.com/kdudek22/sensoryczne" target="_blank" class="noto-sans-600 hover:underline">AI powered survilance cameras for object detection</a>
                         <p>Worked on a team of 3 people. We built an AI powered camera detection system using YOLO v8. We trained our model on wildlife data, with more than 15 classes.
